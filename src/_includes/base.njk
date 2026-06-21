@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if title and title != "Cocreiamo" %}{{ title }} | Cocreiamo{% else %}Cocreiamo{% endif %}</title>
+    <meta name="description" content="{{ description or 'Cocreiamo costruisce e gestisce software allineato per le aziende italiane.' }}" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body>
+    <main>
+      {{ content | safe }}
+    </main>
+  </body>
+</html>
